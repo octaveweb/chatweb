@@ -43,7 +43,7 @@
     border-radius: 5px;
     margin: 0 0 10px 0;
     border: 1px solid #f6a0a0;
-    
+    display: none;
 }
 
 .form form .name-details{
@@ -167,6 +167,7 @@ border-radius: 5px;
     align-items: center;
     justify-content: space-between;
     position: relative;
+
 }
 .users .search .text{
     font-size: 18px;
@@ -180,18 +181,32 @@ border-radius: 5px;
     font-size: 16px;
     border-radius: 5px;
     outline: none;
-
+    opacity: 0;
+    pointer-events: none;
+    transition: all .35s ease;
 } 
+.users .search input.active{
+    opacity: 1;
+    pointer-events: auto;
+}
 .users .search button{
     height: 42px;
     width: 47px;
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
     border: none;
     outline: none;
     font-size: 17px;
     border-radius: 0 5px 5px 0 ;
+    transition: all .20s ease;
     cursor: pointer;
+}
+.users .search button.active{
+    color: #fff;
+    background-color: #333;
+}
+.users .search button.active i::before{
+   content: "\f00d";
 }
 .users-list{
     max-height: 350px;
