@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", serif;
+    text-decoration: none;
+}
+.center{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+.wrapper{
+    width: 450px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 100px 0 #00000010, 0 10px 15px 0 #00000032;
+}
+
+/* Sing up page Css Start */
+
+.form{
+    padding: 1.55rem 1.8rem;
+}
+.form header{
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 1px  solid #e5e5e5;
+    padding: 0 0 20px 0;
+}
+.form form{
+    margin: 1.2rem 0;
+}
+.form form .error-text{
+    color: #bb0101;
+    background-color: #f7afaf;
+    padding: .5rem .6rem;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+    border: 1px solid #f6a0a0;
+    
+}
+
+.form form .name-details{
+    display: flex;
+}
+
+.form .name-details .filled:nth-child(1){
+    margin-right: 10px;
+}
+
+.form .name-details .filled:nth-child(2){
+    margin-left: 10px;
+}
+.form form .filled{
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 10px;
+}
+
+.form form .filled label{
+    margin-bottom: 2px;
+}
+.form form .filled input{
+    outline: none;
+}
+.form form .input input{
+height: 40px;
+width: 100%;
+font-size: 16px ;
+padding: 0 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.form form .image input{
+    font-size: 17px ;
+}
+
+.form form .button input{
+    margin-top: 13px;
+    height: 45px ;
+    font-size: 17px ;
+    border: none;
+    font-weight: 400;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.form .linking{
+    margin: 10px 0; 
+    font-size: 17px;
+    text-align: center;
+}
+.form .linking a{
+    color: #333;
+}
+.form .linking a:hover{
+    text-decoration: underline;
+}
+/* Sing up page Css End */
